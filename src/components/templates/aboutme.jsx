@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './../styles/aboutme.css'
-import AboutPic1 from './../images/aboutPic1.jpg'
+import AboutPic1s from './../images/aboutPic1.jpg'
 
 export class aboutme extends Component {
   render() {
     return (
       <div className="aboutmeWhole">
         <div className="aboutPic">
-          <img src={AboutPic1} alt="" />
+          <img src={AboutPic1s} alt="" />
           <div className="aboutPicT">
             <h1>ABOUT<br></br>MEEE</h1>
           </div>

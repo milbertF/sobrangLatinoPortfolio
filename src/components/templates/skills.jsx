@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./../styles/skills.css";
-import Hey from "./../images/good-morning.png";
 import Html from "./../images/skills/html.png";
 import Css from "./../images/skills/css.png";
 import Js from "./../images/skills/js.png";

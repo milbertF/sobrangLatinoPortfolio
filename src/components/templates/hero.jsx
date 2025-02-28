@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import './../styles/hero.css'
-import Picture from './../images/Picture.png'
 import { TypeAnimation } from 'react-type-animation';
-import Milbert2 from './../images/pm2.png'
-import Milbert from './../images/Picture.png'
 import Hey from './../images/good-morning.png'
 
 

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: stretch;
+  src: url(./../font/StretchPro.otf);
+}
+
+.aboutmeWhole {
+  min-height: 100vh;
+  background-color: rgb(119, 0, 0);
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+.aboutText {
+  width: 40%;
+  padding: 7rem 2rem;
+  color: white;
+}
+.aboutText p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+.aboutPic {
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.aboutPic img {
+  position: absolute;
+  content: "";
+  bottom: -5rem;
+  right: 50%;
+  transform: translateX(50%);
+  min-width: 110%;
+  min-height: 100%;
+  filter: grayscale(1) contrast(1.5) brightness(0.5);
+}
+
+.aboutPic::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 30%;
+  top: 0;
+  right: -1rem;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    transparent,
+    hsl(from var(--maroon) h s l / 0.3),
+    hsl(from var(--maroon) h s l / 0.7),
+    var(--maroon),
+    var(--maroon)
+  );
+}
+
+.aboutPicT {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+.aboutPicT h1 {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: stretch;
+}
+
+.dd {
+  opacity: 0.2;
+}

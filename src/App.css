@@ -1,0 +1,44 @@
+/* div {
+  border: red solid 1px;
+} */
+@font-face {
+  font-family: stretch;
+  src: url(./../font/StretchPro.otf);
+}
+:root {
+  --lightblue: #88ffff;
+  --maroon: #770000;
+  --white: #d5d5d5;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Russo One", serif;
+  /* cursor: cell; */
+}
+
+.wrapTop {
+  height: 200vh;
+}
+.whole {
+  position: relative;
+}
+
+* {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: #d5d5d5;
+  border: #770000 solid 3px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s linear;
+  z-index: 9999;
+}

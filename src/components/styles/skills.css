@@ -1,0 +1,184 @@
+.SkillsWhole {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.SkillsWhole::before {
+  position: absolute;
+  content: "MY SKILLS";
+  height: 8rem;
+  width: 100%;
+  top: -6rem;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.8),
+    rgb(10, 10, 10)
+  );
+  z-index: 1;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: stretch;
+  padding-inline: 2rem;
+  box-sizing: border-box;
+}
+.skillsContent {
+  width: 70rem;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.skillsOverlay p {
+  text-align: center;
+  color: black;
+}
+.skillsWrapper {
+  display: flex;
+  width: 15rem;
+  /* flex-basis: 20rem; */
+  max-width: 100%;
+  perspective: 30rem;
+}
+.skillsCard {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 2rem;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+.skillsCard:hover {
+  border: var(--maroon) solid 3px;
+  background-color: var(--white);
+}
+.skillsOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: none;
+}
+.skillsCard:hover .skillsOverlay {
+  background-color: var(--white);
+  transition: background-color 0.3s ease;
+  display: block;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.skillsCard:hover img {
+  display: none;
+}
+.skillsCard {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsBlur {
+  width: 10rem;
+  height: 10rem;
+  background: radial-gradient(var(--maroon), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(4rem);
+  position: absolute;
+  z-index: 3;
+}
+.skillsCard img {
+  width: 80%;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.skills1 {
+  --htmlColor: #e44d26;
+  background-color: var(--htmlColor);
+}
+.skills1 .skillsOverlay h3 {
+  color: var(--htmlColor);
+}
+
+.skills2 {
+  --cssColor: #264de4;
+  background-color: var(--cssColor);
+}
+.skills2 .skillsOverlay h3 {
+  color: var(--cssColor);
+}
+
+.skills3 {
+  --jsColor: #e9ca32;
+  background-color: var(--jsColor);
+}
+.skills3 .skillsOverlay h3 {
+  color: var(--jsColor);
+}
+
+.skills4 {
+  background-color: #224953;
+}
+.skills5 {
+  background-color: #181616;
+}
+.skills6 {
+  background-color: black;
+}
+.skills5 img {
+  filter: invert(100);
+}
+
+.skillsOverlay h3 {
+  margin-bottom: 1rem;
+  text-shadow: black -0.1rem 0.1rem 0.1rem;
+  font-size: 1.3rem;
+}
+.spart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.smeter {
+  display: flex;
+  align-items: center;
+}
+.spart p {
+  font-size: 0.7rem;
+  width: fit-content;
+  height: fit-content;
+  color: var(--maroon);
+}
+.smeter:has(meter) p {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: black;
+}
+.smeter:not(meter) p {
+  font-size: 1rem;
+  color: black;
+}
+.smeter meter {
+  width: 75%;
+}
+.smeterStrengths p {
+  font-size: 0.7rem;
+  color: black;
+}
+.smeterStrengths {
+  height: 4.5rem;
+  overflow: auto;
+}

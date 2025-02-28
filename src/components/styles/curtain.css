@@ -1,0 +1,75 @@
+.curtainWhole {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+    315deg,
+    #000000 3%,
+    #520909 38%,
+    #160808 68%,
+    #000000 98%
+  );
+
+  animation: gradient 15s ease infinite;
+  background-size: 300% 300%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  z-index: 9000;
+  width: 100%;
+  clip-path: polygon(0 0, 0 100, 100 50, 100 0);
+  border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  box-sizing: border-box;
+  animation: bg infinite 15s linear;
+  overflow: hidden;
+  box-shadow: rgba(14, 14, 14, 0.5) 0rem 2rem 1rem;
+}
+.curtainWhole::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://transparenttextures.com/patterns/beige-paper.png");
+  opacity: 0.4;
+  z-index: 1;
+}
+@keyframes bg {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.curtainWhole p {
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+.curtainWhole h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  position: relative;
+  z-index: 5;
+}
+.curtainWhole h1 span {
+  color: rgb(119, 0, 0);
+  opacity: 1;
+}
+.curtainWhole h3 {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--lightblue);
+  opacity: 0.3;
+}

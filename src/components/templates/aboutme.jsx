@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './../styles/aboutme.css'
-import AboutPic1 from './../images/AboutPic1.jpg'
+import AboutPic1 from './../images/aboutPic1.jpg'
 
 export class aboutme extends Component {
   render() {

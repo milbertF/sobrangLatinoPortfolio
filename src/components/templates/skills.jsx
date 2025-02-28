@@ -4,7 +4,7 @@ import Html from "./../images/skills/html.png";
 import Css from "./../images/skills/css.png";
 import Js from "./../images/skills/js.png";
 import React2 from "./../images/skills/React.svg";
-import Github from "./../images/skills/Github.svg";
+import Github from "./../images/skills/GitHub.svg";
 
 export class Skills extends Component {
   componentDidMount() {
